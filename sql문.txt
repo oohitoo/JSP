@@ -1,0 +1,40 @@
+CREATE TABLE user(
+userID VARCHAR(20) PRIMARY KEY,
+userPassword VARCHAR(20),
+userName VARCHAR(20),
+userGender VARCHAR(20),
+userEmail VARCHAR(50)
+);
+
+CREATE TABLE borad(
+idx int PRIMARY KEY,
+boradTitle varchar(50),
+userID varchar(20),
+boradDate datetime,
+boradContent varchar(2048),
+boradAvailable int(11)
+);
+
+CREATE TABLE marvel(
+idx int(11),
+userID varchar(20),
+marvelDate datetime,
+marvelContent varchar(2048),
+PRIMARY KEY(idx)
+);
+
+CREATE TABLE wrestler(
+idx int(11),
+userID varchar(20),
+wrestlerDate datetime,
+wrestlerContent varchar(2048),
+PRIMARY KEY(idx)
+);
+
+CREATE TABLE champion(
+idx int(11),
+userID varchar(20),
+championDate datetime,
+championContent varchar(2048),
+PRIMARY KEY(idx)
+);
